@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "173fb2b89c568dd1145b8748fe3b7208",
+    "content-hash": "276c3673b95475a5cea9e9ebd676dc4a",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1858,6 +1858,7 @@
                 "reflection",
                 "static"
             ],
+            "abandoned": "roave/better-reflection",
             "time": "2020-03-27T11:06:43+00:00"
         },
         {
@@ -2487,6 +2488,250 @@
                 "source": "https://git.drupal.org/project/masquerade.git",
                 "issues": "https://www.drupal.org/project/issues/masquerade",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
+            "name": "drupal/message",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/message.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/message-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "f1494d8c482840b01f8d1dcc4ed572d5844a3873"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "require-dev": {
+                "drupal/token": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1607017386",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Grayside",
+                    "homepage": "https://www.drupal.org/user/346868"
+                },
+                {
+                    "name": "RoySegall",
+                    "homepage": "https://www.drupal.org/user/1812910"
+                },
+                {
+                    "name": "amitaibu",
+                    "homepage": "https://www.drupal.org/user/57511"
+                },
+                {
+                    "name": "itamar",
+                    "homepage": "https://www.drupal.org/user/1757910"
+                },
+                {
+                    "name": "jhedstrom",
+                    "homepage": "https://www.drupal.org/user/208732"
+                }
+            ],
+            "description": "Message",
+            "homepage": "https://www.drupal.org/project/message",
+            "support": {
+                "source": "https://git.drupalcode.org/project/message"
+            }
+        },
+        {
+            "name": "drupal/message_notify",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/message_notify.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/message_notify-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "10e91b84c817ef2c21590d273487c5259d1e7a6c"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/message": "~1.0"
+            },
+            "require-dev": {
+                "drupal/message": "*",
+                "drupal/message_example": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1603382083",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "RoySegall",
+                    "homepage": "https://www.drupal.org/user/1812910"
+                },
+                {
+                    "name": "amitaibu",
+                    "homepage": "https://www.drupal.org/user/57511"
+                },
+                {
+                    "name": "jhedstrom",
+                    "homepage": "https://www.drupal.org/user/208732"
+                }
+            ],
+            "description": "Notification framework for the Message module",
+            "homepage": "https://drupal.org/project/message_notify",
+            "support": {
+                "source": "https://cgit.drupalcode.org/message_notify",
+                "issues": "https://drupal.org/project/issues/message_notify",
+                "irc": "irc://irc.freenode.org/drupal"
+            }
+        },
+        {
+            "name": "drupal/private_message",
+            "version": "dev-2.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/private_message.git",
+                "reference": "0859086157ceca963f13b4565587a44831e16a89"
+            },
+            "require": {
+                "drupal/core": ">=8.8",
+                "drupal/message": "^1.0",
+                "drupal/message_notify": "^1.0",
+                "php": ">=7.1"
+            },
+            "suggest": {
+                "drush/drush": "^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.0-beta16+37-dev",
+                    "datestamp": "1615702951",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9 || ^10"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jay Friendly (Jaypan)",
+                    "homepage": "https://www.jaypan.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "anmolgoyal74",
+                    "homepage": "https://www.drupal.org/user/3560428"
+                },
+                {
+                    "name": "artem_sylchuk",
+                    "homepage": "https://www.drupal.org/user/2511902"
+                },
+                {
+                    "name": "edutrul",
+                    "homepage": "https://www.drupal.org/user/1621444"
+                },
+                {
+                    "name": "heddn",
+                    "homepage": "https://www.drupal.org/user/1463982"
+                },
+                {
+                    "name": "phjou",
+                    "homepage": "https://www.drupal.org/user/3344054"
+                }
+            ],
+            "description": "A private message system for users to send messages to each other.",
+            "homepage": "https://drupal.org/project/private_message",
+            "support": {
+                "source": "https://git.drupalcode.org/project/private_message",
+                "issues": "https://drupal.org/project/issues/private_message"
+            },
+            "time": "2021-03-14T06:46:41+00:00"
+        },
+        {
+            "name": "drupal/private_message_windows",
+            "version": "1.0.0-beta14",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/private_message_windows.git",
+                "reference": "8.x-1.0-beta14"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/private_message_windows-8.x-1.0-beta14.zip",
+                "reference": "8.x-1.0-beta14",
+                "shasum": "4b3e675fe7076698f0a0b87c14ca90e59831f613"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/private_message": "^2.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-beta14",
+                    "datestamp": "1597430816",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Sergey Shapkin (Istislav)",
+                    "homepage": "https://www.istislav.ru",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Float windows for chat on every page like on linkedin.com",
+            "homepage": "https://drupal.org/project/private_message_windows",
+            "support": {
+                "source": "https://cgit.drupalcode.org/private_message_windows",
+                "issues": "https://drupal.org/project/issues/private_message_windows"
             }
         },
         {
@@ -3586,16 +3831,16 @@
         },
         {
             "name": "pear/archive_tar",
-            "version": "1.4.9",
+            "version": "1.4.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pear/Archive_Tar.git",
-                "reference": "c5b00053770e1d72128252c62c2c1a12c26639f0"
+                "reference": "2b87b41178cc6d4ad3cba678a46a1cae49786011"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pear/Archive_Tar/zipball/c5b00053770e1d72128252c62c2c1a12c26639f0",
-                "reference": "c5b00053770e1d72128252c62c2c1a12c26639f0",
+                "url": "https://api.github.com/repos/pear/Archive_Tar/zipball/2b87b41178cc6d4ad3cba678a46a1cae49786011",
+                "reference": "2b87b41178cc6d4ad3cba678a46a1cae49786011",
                 "shasum": ""
             },
             "require": {
@@ -3648,7 +3893,17 @@
                 "archive",
                 "tar"
             ],
-            "time": "2019-12-04T10:17:28+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/mrook",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/michielrook",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2021-02-16T10:50:50+00:00"
         },
         {
             "name": "pear/console_getopt",
@@ -3743,23 +3998,23 @@
         },
         {
             "name": "pear/pear_exception",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pear/PEAR_Exception.git",
-                "reference": "dbb42a5a0e45f3adcf99babfb2a1ba77b8ac36a7"
+                "reference": "b14fbe2ddb0b9f94f5b24cf08783d599f776fff0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pear/PEAR_Exception/zipball/dbb42a5a0e45f3adcf99babfb2a1ba77b8ac36a7",
-                "reference": "dbb42a5a0e45f3adcf99babfb2a1ba77b8ac36a7",
+                "url": "https://api.github.com/repos/pear/PEAR_Exception/zipball/b14fbe2ddb0b9f94f5b24cf08783d599f776fff0",
+                "reference": "b14fbe2ddb0b9f94f5b24cf08783d599f776fff0",
                 "shasum": ""
             },
             "require": {
-                "php": ">=4.4.0"
+                "php": ">=5.2.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "*"
+                "phpunit/phpunit": "<9"
             },
             "type": "class",
             "extra": {
@@ -3794,7 +4049,7 @@
             "keywords": [
                 "exception"
             ],
-            "time": "2019-12-10T10:24:42+00:00"
+            "time": "2021-03-21T15:43:46+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -6922,12 +7177,12 @@
             "version": "1.9.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/webmozart/assert.git",
+                "url": "https://github.com/webmozarts/assert.git",
                 "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "shasum": ""
             },
@@ -8639,6 +8894,7 @@
             "keywords": [
                 "tokenizer"
             ],
+            "abandoned": true,
             "time": "2019-09-17T06:23:10+00:00"
         },
         {
@@ -9926,6 +10182,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/private_message_windows": 10,
         "drupal/core-dev": 20
     },
     "prefer-stable": true,
