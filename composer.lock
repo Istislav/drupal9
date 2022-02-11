@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "173fb2b89c568dd1145b8748fe3b7208",
+    "content-hash": "276c3673b95475a5cea9e9ebd676dc4a",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1858,6 +1858,7 @@
                 "reflection",
                 "static"
             ],
+            "abandoned": "roave/better-reflection",
             "time": "2020-03-27T11:06:43+00:00"
         },
         {
@@ -1881,7 +1882,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-2.3",
-                    "datestamp": "1592535714",
+                    "datestamp": "1629907119",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2144,8 +2145,8 @@
             "autoload": {
                 "psr-4": {
                     "Drupal\\Core\\": "lib/Drupal/Core",
-                    "Drupal\\Component\\": "lib/Drupal/Component",
-                    "Drupal\\Driver\\": "../drivers/lib/Drupal/Driver"
+                    "Drupal\\Driver\\": "../drivers/lib/Drupal/Driver",
+                    "Drupal\\Component\\": "lib/Drupal/Component"
                 },
                 "classmap": [
                     "lib/Drupal.php",
@@ -2487,6 +2488,252 @@
                 "source": "https://git.drupal.org/project/masquerade.git",
                 "issues": "https://www.drupal.org/project/issues/masquerade",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
+            "name": "drupal/message",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/message.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/message-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "f1494d8c482840b01f8d1dcc4ed572d5844a3873"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "require-dev": {
+                "drupal/token": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1607017386",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Grayside",
+                    "homepage": "https://www.drupal.org/user/346868"
+                },
+                {
+                    "name": "RoySegall",
+                    "homepage": "https://www.drupal.org/user/1812910"
+                },
+                {
+                    "name": "amitaibu",
+                    "homepage": "https://www.drupal.org/user/57511"
+                },
+                {
+                    "name": "itamar",
+                    "homepage": "https://www.drupal.org/user/1757910"
+                },
+                {
+                    "name": "jhedstrom",
+                    "homepage": "https://www.drupal.org/user/208732"
+                }
+            ],
+            "description": "Message",
+            "homepage": "https://www.drupal.org/project/message",
+            "support": {
+                "source": "https://git.drupalcode.org/project/message"
+            }
+        },
+        {
+            "name": "drupal/message_notify",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/message_notify.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/message_notify-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "10e91b84c817ef2c21590d273487c5259d1e7a6c"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/message": "~1.0"
+            },
+            "require-dev": {
+                "drupal/message": "*",
+                "drupal/message_example": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1603382083",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "RoySegall",
+                    "homepage": "https://www.drupal.org/user/1812910"
+                },
+                {
+                    "name": "amitaibu",
+                    "homepage": "https://www.drupal.org/user/57511"
+                },
+                {
+                    "name": "jhedstrom",
+                    "homepage": "https://www.drupal.org/user/208732"
+                }
+            ],
+            "description": "Notification framework for the Message module",
+            "homepage": "https://drupal.org/project/message_notify",
+            "support": {
+                "source": "https://cgit.drupalcode.org/message_notify",
+                "issues": "https://drupal.org/project/issues/message_notify",
+                "irc": "irc://irc.freenode.org/drupal"
+            }
+        },
+        {
+            "name": "drupal/private_message",
+            "version": "2.0.0-beta17",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/private_message.git",
+                "reference": "8.x-2.0-beta17"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/private_message-8.x-2.0-beta17.zip",
+                "reference": "8.x-2.0-beta17",
+                "shasum": "b12996915535486a848b39f0e59f2c25ba1a2962"
+            },
+            "require": {
+                "drupal/core": "^8.8.0 || ^9.0",
+                "drupal/message": "^1.0",
+                "drupal/message_notify": "^1.0",
+                "php": ">=7.1"
+            },
+            "suggest": {
+                "drush/drush": "^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.0-beta17",
+                    "datestamp": "1631780578",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9 || ^10"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jay Friendly (Jaypan)",
+                    "homepage": "https://www.jaypan.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "anmolgoyal74",
+                    "homepage": "https://www.drupal.org/user/3560428"
+                },
+                {
+                    "name": "artem_sylchuk",
+                    "homepage": "https://www.drupal.org/user/2511902"
+                },
+                {
+                    "name": "edutrul",
+                    "homepage": "https://www.drupal.org/user/1621444"
+                },
+                {
+                    "name": "heddn",
+                    "homepage": "https://www.drupal.org/user/1463982"
+                },
+                {
+                    "name": "phjou",
+                    "homepage": "https://www.drupal.org/user/3344054"
+                }
+            ],
+            "description": "A private message system for users to send messages to each other.",
+            "homepage": "https://drupal.org/project/private_message",
+            "support": {
+                "source": "https://git.drupalcode.org/project/private_message",
+                "issues": "https://drupal.org/project/issues/private_message"
+            }
+        },
+        {
+            "name": "drupal/private_message_windows",
+            "version": "1.0.0-beta15",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/private_message_windows.git",
+                "reference": "8.x-1.0-beta15"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/private_message_windows-8.x-1.0-beta15.zip",
+                "reference": "8.x-1.0-beta15",
+                "shasum": "251f13303db825466777b186022eb72c61319401"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/private_message": "^2.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-beta15",
+                    "datestamp": "1630495388",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Sergey Shapkin (Istislav)",
+                    "homepage": "https://www.istislav.ru",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Float windows for chat on every page like on linkedin.com",
+            "homepage": "https://drupal.org/project/private_message_windows",
+            "support": {
+                "source": "https://cgit.drupalcode.org/private_message_windows",
+                "issues": "https://drupal.org/project/issues/private_message_windows"
             }
         },
         {
@@ -2932,12 +3179,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\Psr7\\": "src/"
-                },
                 "files": [
                     "src/functions_include.php"
-                ]
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -5140,20 +5387,23 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.18.1",
+            "version": "v1.24.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "1c302646f6efc070cd46856e600e5e0684d6b454"
+                "reference": "30885182c981ab175d4d034db0f6f469898070ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/1c302646f6efc070cd46856e600e5e0684d6b454",
-                "reference": "1c302646f6efc070cd46856e600e5e0684d6b454",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/30885182c981ab175d4d034db0f6f469898070ab",
+                "reference": "30885182c981ab175d4d034db0f6f469898070ab",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": ">=7.1"
+            },
+            "provide": {
+                "ext-ctype": "*"
             },
             "suggest": {
                 "ext-ctype": "For best performance"
@@ -5161,7 +5411,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.18-dev"
+                    "dev-main": "1.23-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -5212,7 +5462,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-14T12:35:20+00:00"
+            "time": "2021-10-20T20:35:02+00:00"
         },
         {
             "name": "symfony/polyfill-iconv",
@@ -5245,12 +5495,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Iconv\\": ""
-                },
                 "files": [
                     "bootstrap.php"
-                ]
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Iconv\\": ""
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -5325,12 +5575,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Intl\\Idn\\": ""
-                },
                 "files": [
                     "bootstrap.php"
-                ]
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Intl\\Idn\\": ""
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -5407,12 +5657,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Intl\\Normalizer\\": ""
-                },
                 "files": [
                     "bootstrap.php"
                 ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Intl\\Normalizer\\": ""
+                },
                 "classmap": [
                     "Resources/stubs"
                 ]
@@ -5459,20 +5709,23 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.18.1",
+            "version": "v1.24.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "a6977d63bf9a0ad4c65cd352709e230876f9904a"
+                "reference": "0abb51d2f102e00a4eefcf46ba7fec406d245825"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/a6977d63bf9a0ad4c65cd352709e230876f9904a",
-                "reference": "a6977d63bf9a0ad4c65cd352709e230876f9904a",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/0abb51d2f102e00a4eefcf46ba7fec406d245825",
+                "reference": "0abb51d2f102e00a4eefcf46ba7fec406d245825",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": ">=7.1"
+            },
+            "provide": {
+                "ext-mbstring": "*"
             },
             "suggest": {
                 "ext-mbstring": "For best performance"
@@ -5480,7 +5733,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.18-dev"
+                    "dev-main": "1.23-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -5532,7 +5785,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-14T12:35:20+00:00"
+            "time": "2021-11-30T18:21:41+00:00"
         },
         {
             "name": "symfony/polyfill-php70",
@@ -5639,12 +5892,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Php72\\": ""
-                },
                 "files": [
                     "bootstrap.php"
-                ]
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php72\\": ""
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -5712,12 +5965,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Php73\\": ""
-                },
                 "files": [
                     "bootstrap.php"
                 ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php73\\": ""
+                },
                 "classmap": [
                     "Resources/stubs"
                 ]
@@ -5788,12 +6041,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Php80\\": ""
-                },
                 "files": [
                     "bootstrap.php"
                 ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php80\\": ""
+                },
                 "classmap": [
                     "Resources/stubs"
                 ]
@@ -6680,31 +6933,32 @@
         },
         {
             "name": "twig/twig",
-            "version": "v2.13.1",
+            "version": "v2.14.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "57e96259776ddcacf1814885fc3950460c8e18ef"
+                "reference": "66baa66f29ee30e487e05f1679903e36eb01d727"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/57e96259776ddcacf1814885fc3950460c8e18ef",
-                "reference": "57e96259776ddcacf1814885fc3950460c8e18ef",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/66baa66f29ee30e487e05f1679903e36eb01d727",
+                "reference": "66baa66f29ee30e487e05f1679903e36eb01d727",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.1.3",
                 "symfony/polyfill-ctype": "^1.8",
-                "symfony/polyfill-mbstring": "^1.3"
+                "symfony/polyfill-mbstring": "^1.3",
+                "symfony/polyfill-php72": "^1.8"
             },
             "require-dev": {
                 "psr/container": "^1.0",
-                "symfony/phpunit-bridge": "^4.4.9|^5.0.9"
+                "symfony/phpunit-bridge": "^4.4.9|^5.0.9|^6.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.13-dev"
+                    "dev-master": "2.14-dev"
                 }
             },
             "autoload": {
@@ -6751,7 +7005,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-08-05T15:09:04+00:00"
+            "time": "2022-02-04T06:57:25+00:00"
         },
         {
             "name": "typo3/phar-stream-wrapper",
@@ -6922,12 +7176,12 @@
             "version": "1.9.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/webmozart/assert.git",
+                "url": "https://github.com/webmozarts/assert.git",
                 "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "shasum": ""
             },
@@ -7010,6 +7264,7 @@
                 }
             ],
             "description": "A robust cross-platform utility for normalizing, comparing and modifying file paths.",
+            "abandoned": "symfony/filesystem",
             "time": "2015-12-17T08:42:14+00:00"
         },
         {
@@ -8051,12 +8306,12 @@
             },
             "type": "library",
             "autoload": {
-                "psr-4": {
-                    "DeepCopy\\": "src/DeepCopy/"
-                },
                 "files": [
                     "src/DeepCopy/deep_copy.php"
-                ]
+                ],
+                "psr-4": {
+                    "DeepCopy\\": "src/DeepCopy/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -8639,6 +8894,7 @@
             "keywords": [
                 "tokenizer"
             ],
+            "abandoned": true,
             "time": "2019-09-17T06:23:10+00:00"
         },
         {
@@ -9926,6 +10182,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/private_message_windows": 10,
         "drupal/core-dev": 20
     },
     "prefer-stable": true,
